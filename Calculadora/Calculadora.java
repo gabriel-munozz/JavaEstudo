@@ -23,22 +23,22 @@ public class Calculadora{
 
             switch(opcao){
                 case 1:
-                    System.out.println("Resultado: " + Somar(num1, num2)+"\n");
+                    System.out.println("Resultado: " + somar(num1, num2)+"\n");
                     break;
                 
                 case 2:
-                    System.out.println("Resultado: " + Subtracao(num1, num2)+"\n");
+                    System.out.println("Resultado: " + subtracao(num1, num2)+"\n");
                     break;
 
                 case 3: 
-                    System.out.println("Resultado: " + Multiplicacao(num1, num2)+"\n");
+                    System.out.println("Resultado: " + multiplicacao(num1, num2)+"\n");
                     break;
 
                 case 4: 
                     if (num2 == 0){
                         System.out.println("Não é possível dividir um número por 0\n");
                     } else{
-                        System.out.println("Resultado: " + Divisao(num1, num2)+"\n");
+                        System.out.println("Resultado: " + divisao(num1, num2)+"\n");
                     }
                     break;
 
@@ -51,28 +51,20 @@ public class Calculadora{
 
     }
 
-    public static int Somar(int num1, int num2){
-        int soma;
-        soma = num1 + num2;
-        return soma;
+    public static int somar(int num1, int num2){
+        return num1 + num2;
     }
 
-    public static int Subtracao(int num1, int num2){
-        int subtracao;
-        subtracao = num1 - num2;
-        return subtracao;
+    public static int subtracao(int num1, int num2){
+        return num1 - num2;
     }
 
-    public static int Multiplicacao(int num1, int num2){
-        int multiplicacao;
-        multiplicacao = num1 * num2;
-        return multiplicacao;        
+    public static int multiplicacao(int num1, int num2){;
+        return num1 * num2;        
     }
 
-    public static int Divisao(int num1, int num2){
-        int divisao;
-        divisao = num1 / num2;
-        return divisao;
+    public static int divisao(int num1, int num2){
+        return num1 / num2;
     }
 
 } 
